@@ -13,7 +13,16 @@
     <packaging>pom</packaging>
     <modules>
         <module>z-dubbo-xml-provider</module>
+        <module>z-dubbo-xml-consumer</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.zhj</groupId>
+            <artifactId>z-dubbo-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

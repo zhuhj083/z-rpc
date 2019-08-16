@@ -13,6 +13,9 @@
         <module>z-dubbo</module>
     </modules>
 
+    <properties>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
