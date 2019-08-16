@@ -12,7 +12,6 @@
     <artifactId>z-dubbo-common</artifactId>
 
     <name>z-dubbo-common</name>
-    <url>http://www.example.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

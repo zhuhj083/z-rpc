@@ -13,9 +13,10 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>z-dubbo-xml</module>
         <module>z-dubbo-common</module>
         <module>z-dubbo-annotation</module>
+        <module>z-dubbo-api</module>
+        <module>z-dubbo-xml</module>
     </modules>
 
     <dependencies>
@@ -63,6 +64,5 @@
         </dependency>
 
     </dependencies>
-
 
 </project>
