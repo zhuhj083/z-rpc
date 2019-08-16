@@ -28,6 +28,18 @@ public class ThriftClient {
             if (args[0].contains("simple")) {
                 transport = new TSocket("localhost", 9090);
                 transport.open();
+            }else if (args[0].contains("nonblocking")) {
+                transport = new TSocket("localhost", 9091);
+                transport.open();
+            }else if (args[0].contains("threadpool")) {
+                transport = new TSocket("localhost", 9092);
+                transport.open();
+            }else if (args[0].contains("hsha")) {
+                transport = new TSocket("localhost", 9093);
+                transport.open();
+            }else if (args[0].contains("threadpollSelector")) {
+                transport = new TSocket("localhost", 9094);
+                transport.open();
             }
             else {
                 /*
@@ -42,7 +54,7 @@ public class ThriftClient {
                  * Get a client transport instead of a server transport. The connection is opened on
                  * invocation of the factory method, no need to specifically call open()
                  */
-                transport = TSSLTransportFactory.getClientSocket("localhost", 9091, 0, params);
+                transport = TSSLTransportFactory.getClientSocket("localhost", 9095, 0, params);
             }
 
             TProtocol protocol = new  TBinaryProtocol(transport);
