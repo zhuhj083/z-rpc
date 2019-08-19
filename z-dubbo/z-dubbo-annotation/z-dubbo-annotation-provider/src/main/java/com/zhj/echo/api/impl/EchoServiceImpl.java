@@ -18,6 +18,9 @@ public class EchoServiceImpl implements EchoService {
         String now = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         System.out.println("[" + now + "]Echo " + message + ",request from consumer:"+
                 RpcContext.getContext().getRemoteAddress());
+
+
+
         return message;
     }
 }

@@ -17,7 +17,17 @@ public class EchoApiConsumer {
         referenceConfig.setInterface(EchoService.class);
 
         EchoService greetingService = referenceConfig.get();
-        String message = greetingService.echo("Hello ZHJ");
-        System.out.println(message);
+
+        int count = 0;
+        while (true){
+            String message = greetingService.echo("Hello count_"+ count++);
+            System.out.println(message);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 }
