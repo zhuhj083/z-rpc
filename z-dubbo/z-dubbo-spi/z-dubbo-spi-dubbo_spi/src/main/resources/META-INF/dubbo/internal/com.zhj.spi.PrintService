@@ -1,0 +1,2 @@
+impl1=com.zhj.spi.impl.PrintServiceImpl
+impl2=com.zhj.spi.impl.PrintService2Impl

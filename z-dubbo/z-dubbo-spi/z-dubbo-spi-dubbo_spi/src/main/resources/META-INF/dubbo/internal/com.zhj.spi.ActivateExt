@@ -1,0 +1,6 @@
+default=com.zhj.spi.impl.DefaultActivateExtImpl
+before=com.zhj.spi.impl.BeforeActivateExtImpl
+group=com.zhj.spi.impl.GroupActivateExtImpl
+value=com.zhj.spi.impl.ValueActivateExtImpl
+order1=com.zhj.spi.impl.OrderActivateExtImpl1
+order2=com.zhj.spi.impl.OrderActivateExtImpl2

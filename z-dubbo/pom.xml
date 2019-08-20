@@ -17,13 +17,24 @@
         <module>z-dubbo-annotation</module>
         <module>z-dubbo-api</module>
         <module>z-dubbo-xml</module>
+        <module>z-dubbo-spi</module>
     </modules>
+
+    <properties>
+        <dubbo.version>2.7.0</dubbo.version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
-            <version>2.7.0</version>
+            <version>${dubbo.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-monitor-default</artifactId>
+            <version>${dubbo.version}</version>
         </dependency>
 
         <dependency>
