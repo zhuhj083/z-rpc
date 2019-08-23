@@ -19,8 +19,6 @@ public class EchoServiceImpl implements EchoService {
         System.out.println("[" + now + "]Echo " + message + ",request from consumer:"+
                 RpcContext.getContext().getRemoteAddress());
 
-
-
         return message;
     }
 }

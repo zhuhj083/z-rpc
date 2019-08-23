@@ -1,13 +1,16 @@
 package com.zhj.echo;
 
+import com.zhj.echo.api.EchoService;
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.ProtocolConfig;
 import org.apache.dubbo.config.ProviderConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.apache.dubbo.config.spring.context.annotation.EnableDubboConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 import java.io.IOException;
 
@@ -23,7 +26,6 @@ public class EchoAnnotationProvider {
 
         System.in.read();
     }
-
 
     @Configuration
     @EnableDubbo(scanBasePackages = "com.zhj.echo") //指定扫描服务所在的包

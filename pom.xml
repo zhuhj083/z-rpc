@@ -11,6 +11,7 @@
     <modules>
         <module>z-thrift</module>
         <module>z-dubbo</module>
+        <module>z-other</module>
     </modules>
 
     <properties>

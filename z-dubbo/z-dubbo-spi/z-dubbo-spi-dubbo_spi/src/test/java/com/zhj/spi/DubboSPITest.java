@@ -16,8 +16,8 @@ public class DubboSPITest {
         URL url = URL.valueOf("test://localhost/test?x=ad2");
         PrintService printService ;
 
-//        printService = extensionLoader.getExtension("impl1");
-//        printService.printInfo(url);
+        printService = extensionLoader.getExtension("impl1");
+        printService.printInfo(url);
 
         //test default extension
 //        printService = extensionLoader.getExtension("true");
